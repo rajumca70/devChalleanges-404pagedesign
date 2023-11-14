@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=DM+Sans:wght@500&family=Dancing+Script:wght@600&family=Heebo&family=Montserrat:wght@400;500&family=Noto+Sans:wght@400;700&family=Oswald&family=Outfit&family=Poppins:wght@300;400&family=Roboto+Mono&family=Roboto:wght@100;300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=DM+Sans:wght@500&family=Dancing+Script:wght@600&family=Heebo&family=Montserrat:wght@400;500&family=Noto+Sans:wght@400;700&family=Oswald&family=Outfit&family=Poppins:wght@300;400&family=Roboto+Mono&family=Roboto:wght@100;300;900&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=DM+Sans:wght@500&family=Dancing+Script:wght@600&family=Heebo&family=Inconsolata:wght@700&family=Montserrat:wght@400;500&family=Noto+Sans:wght@400;700&family=Oswald&family=Outfit&family=Poppins:wght@300;400&family=Roboto+Mono&family=Roboto:wght@100;300;900&family=Space+Mono:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #333333;
+    --btn-bgcolor: #333333;
+    --btn-text: #FFFFFF;
+    --background: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 14px;
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+     padding: 10px;
+}
+
+img {
+    position: relative;
+    top: 90px;
+    left: 120px;
+    width: 240px;
+    height: 200px;
+    padding: 2px;
+}
+
+.text {
+    position: absolute;
+    left: 400px;
+    top: 98px;
+    font-family: 'Space Mono', monospace;
+    width: 330px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2px;
+    padding: 2px;
+}
+
+.text>h2 {    
+    font-weight: 700;
+    letter-spacing: .1px;
+    font-size: 35px;
+    margin: 0;
+}
+
+.text>p {
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.text>button {
+    text-transform: uppercase;
+    background: var(--btn-bgcolor);
+    padding: 10px;
+    font-size: 8px;
+    letter-spacing: .8px;
+    color: var(--btn-text);
+    margin-top: 15px;
+    width: 120px;
+    outline: none;
+    border: none;
+}
+
+.writerinfo {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    top: 375px;
+    left: 375px;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+.writerinfo a {
+    color: #f7542e;
+}
+
+a:link {
+    color: #BDBDBD;
+}
+
+@media only screen and (max-width: 360px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        position: relative;
+        top: 90px;
+        left: 20px;
+        width: 240px;
+        height: 200px;
+        padding: 2px;
+    }
+
+    .text {
+        position: absolute;
+        left: 50px;
+        top: 320px;
+        font-family: 'Space Mono', monospace;
+        width: 300px;
+        height: 200px;
+    }
+
+    .text>h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .text>p {
+        text-align: center;
+    }
+
+    .text>button {
+        position: relative;
+        margin-top: 40px;
+        left: 80px;
+    }
+    
+.writerinfo {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    top: 595px;
+    left: 80px;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+}
