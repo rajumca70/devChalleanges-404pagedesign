@@ -16,70 +16,79 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    font-size: 14px;
-    font-family: 'Inconsolata', monospace;
     position: absolute;
-    left: 50px;
     top: 10px;
-     padding: 10px;
+    left: 20px;
+    margin-top: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+     padding: 2px;
+    margin: 30px 0 0 120px;
+    /* border: 1px solid saddlebrown; */
+    display: flex;
+    /* justify-content: space-evenly */
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 40vw;
+    height: 90vh;
+    /* border: 1px solid lightcoral; */
+ }
+
+.content {
+    padding-top: 10%;
+    width: 45vw;
+    height: 90vh;
+    font-family: 'Space Mono', monospace;
+    /* border:1px solid lawngreen; */
 }
 
 img {
-    position: relative;
-    top: 90px;
-    left: 120px;
-    width: 240px;
-    height: 200px;
-    padding: 2px;
+    padding-top: 30%;
+    width: 100%;
+    height: 90%;
 }
 
-.text {
-    position: absolute;
-    left: 400px;
-    top: 98px;
-    font-family: 'Space Mono', monospace;
-    width: 330px;
-    height: 195px;
-    display: flex;
-    flex-direction: column;
-    column-gap: 2px;
-    padding: 2px;
-}
-
-.text>h2 {    
+h2 {
     font-weight: 700;
-    letter-spacing: .1px;
     font-size: 35px;
-    margin: 0;
+    /* letter-spacing: .1px; */
 }
 
-.text>p {
+p {
     font-size: 9px;
-    margin-top: 10px;
+    letter-spacing: .2px;
 }
 
-.text>button {
+button {
     text-transform: uppercase;
-    background: var(--btn-bgcolor);
-    padding: 10px;
-    font-size: 8px;
-    letter-spacing: .8px;
+    font-size: 10px;
+    background-color: var(--btn-bgcolor);
     color: var(--btn-text);
-    margin-top: 15px;
-    width: 120px;
     outline: none;
     border: none;
+    letter-spacing: .4px;
+    padding: 7px;
+    margin-top: 35px;
 }
 
 .writerinfo {
-    position: absolute;
     font-family: 'Montserrat', sans-serif;
-    top: 375px;
-    left: 375px;
     font-size: 12px;
     color: #BDBDBD;
 }
@@ -92,53 +101,65 @@ a:link {
     color: #BDBDBD;
 }
 
-@media only screen and (max-width: 360px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    img {
-        position: relative;
-        top: 90px;
-        left: 20px;
-        width: 240px;
-        height: 200px;
-        padding: 2px;
-    }
-
-    .text {
-        position: absolute;
-        left: 50px;
-        top: 320px;
-        font-family: 'Space Mono', monospace;
-        width: 300px;
-        height: 200px;
-    }
-
-    .text>h2 {
-        text-align: center;
-        font-size: 25px;
-    }
-
-    .text>p {
-        text-align: center;
-    }
-
-    .text>button {
-        position: relative;
-        margin-top: 40px;
-        left: 80px;
-    }
+@media (max-width:360px) {
     
-.writerinfo {
+.container {
+    width: 320px;
+    height: 450px;
     position: absolute;
-    font-family: 'Montserrat', sans-serif;
-    top: 595px;
-    left: 80px;
-    font-size: 12px;
-    color: #BDBDBD;
-}
+    top:10px;
+     padding: 2px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;     
+     /* border:1px solid gray; */
+     margin-left:0px;
+ }
+ .image{
+    /* border: 1px solid lightblue; */
+    position: absolute;
+    top:0px;
+    height:200px;
+    width:313px;
+    margin-left: 0px;
+    margin-bottom: 3px;
+ }
+ img{
+    padding: 0px;
+     background-size:auto;
+    height: 200px;
+ }
+ .content{
+    /* border:1px solid blue; */
+    position: relative;
+    padding: 2px;
+    width: 312px;
+    height: 200px;
+    top:80px;        
+ }
+ h2{
+    /* border:1px solid lightsalmon; */
+    margin-left: 0;
+    margin-right: 0;
+    padding-top:0;
+    margin-top: 0px;    
+    margin-bottom: 0px;
+    text-align: center;    
+ }
+ p{     
+    /* border: 1px solid orange; */
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+  }
+ button{
+    margin-top: 0px;
+    margin-left: 90px;
+    /* align-items: center; */
+ }
+ .writerinfo{
+    position: relative;
+    top:290px;
+    
+ }
 }
